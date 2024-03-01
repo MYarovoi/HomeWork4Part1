@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var button: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,11 @@ class ViewController: UIViewController {
         label.text = "Hello Mykyta"
     }
 
-
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+        label.text = "Mykyta, new text is here"
+    }
+    
 }
 
